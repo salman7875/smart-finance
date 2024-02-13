@@ -60,16 +60,36 @@ const heroCardData = [
 ];
 
 const brandsData = [
-  { id: 1, icon: "../progressive.png", alt: "progressive png" },
-  { id: 2, icon: "../allstate.png", alt: "allstate png" },
-  { id: 3, icon: "../21st.png", alt: "21st png" },
-  { id: 4, icon: "../nationwide.png", alt: "nationwide png" },
+  {
+    id: 1,
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/progressive.png",
+    alt: "progressive png",
+  },
+  {
+    id: 2,
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/allstate.png",
+    alt: "allstate png",
+  },
+  {
+    id: 3,
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/21st.png",
+    alt: "21st png",
+  },
+  {
+    id: 4,
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/nationwide.png",
+    alt: "nationwide png",
+  },
   {
     id: 5,
-    icon: "../liberty_mutual_new.jpg",
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/nationwide.png",
     alt: "liberty_mutual_new png",
   },
-  { id: 6, icon: "../21st.png", alt: "21st png" },
+  {
+    id: 6,
+    icon: "https://smartfinancial.com/assets/images/auto_insurance_page/company/metlife.png",
+    alt: "Met Life logo png",
+  },
 ];
 
 const questAns = [
@@ -192,35 +212,40 @@ const newsData = [
     title: "Olympic Games Tokyo 2020 Postponed Amid COVID-19 Concerns",
     description:
       "The International Olympic Committee announces the postponement of the Tokyo 2020 Olympics due to the ongoing COVID-19 pandemic.",
-    image: "https://imgs.search.brave.com/8OqBe6kes0BNkYYmIWbu6db4KSLl6m9sQoeTn0hPGkc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/NjIwMzc5Ny9waG90/by90b3BzaG90LWEt/cGhvdG8tdGFrZW4t/aW4tdGhlLWxhdGUt/aG91cnMtb2YtbWF5/LTI5LTIwMjAtc2hv/d3MtYS1zaWduLW9m/LXRoZS13b3JsZC1o/ZWFsdGguanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUxQRnhO/aTlkZHNXVmw4NzZM/dGc2M2E3eFozMWdN/NjNKWTNWM1lULTZ3/bUE9",
+    image:
+      "https://imgs.search.brave.com/8OqBe6kes0BNkYYmIWbu6db4KSLl6m9sQoeTn0hPGkc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/NjIwMzc5Ny9waG90/by90b3BzaG90LWEt/cGhvdG8tdGFrZW4t/aW4tdGhlLWxhdGUt/aG91cnMtb2YtbWF5/LTI5LTIwMjAtc2hv/d3MtYS1zaWduLW9m/LXRoZS13b3JsZC1o/ZWFsdGguanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUxQRnhO/aTlkZHNXVmw4NzZM/dGc2M2E3eFozMWdN/NjNKWTNWM1lULTZ3/bUE9",
   },
   {
     id: 9,
     title: "Apple Unveils Latest iPhone Model with Advanced Features",
     description:
       "Apple launches the newest iPhone model, boasting enhanced performance, camera capabilities, and innovative features.",
-    image: "https://imgs.search.brave.com/-85VVXKgdf3iZaM8yf3xCwqSuyICi4FvlKUacVrBBQI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDI3ODAz/LzQ0NzEvaS80NTAv/ZGVwb3NpdHBob3Rv/c180NDcxMTgyNS1z/dG9jay1waG90by10/aGUtYXBwbGUtbWFj/aW50b3NoLXN5bWJv/bC1vdmVyLmpwZw",
+    image:
+      "https://imgs.search.brave.com/-85VVXKgdf3iZaM8yf3xCwqSuyICi4FvlKUacVrBBQI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDI3ODAz/LzQ0NzEvaS80NTAv/ZGVwb3NpdHBob3Rv/c180NDcxMTgyNS1z/dG9jay1waG90by10/aGUtYXBwbGUtbWFj/aW50b3NoLXN5bWJv/bC1vdmVyLmpwZw",
   },
   {
     id: 10,
     title: "United Nations Convenes Summit on Global Hunger Crisis",
     description:
       "The UN holds a summit to address the escalating global hunger crisis exacerbated by conflicts, climate change, and the COVID-19 pandemic.",
-    image: "https://imgs.search.brave.com/dODpsTxVJ-UYb3luj5eo67Ea2Y9RT0ZD6QSS8IV9eDo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjU1NDgyNy9waG90/by9hbi1hZXJpYWwt/aW1hZ2Utb2YtdGhl/LXNob3Jlcy1vZi12/aWN0b3JpYS1pc2xh/bmQtbGFnb3MuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWpX/b0ptN1BPQjVvWXlC/SURLVlhxVHRabTlZ/Zm1OMjF5cHRHWFRU/SUNsX009",
+    image:
+      "https://imgs.search.brave.com/dODpsTxVJ-UYb3luj5eo67Ea2Y9RT0ZD6QSS8IV9eDo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUw/NjU1NDgyNy9waG90/by9hbi1hZXJpYWwt/aW1hZ2Utb2YtdGhl/LXNob3Jlcy1vZi12/aWN0b3JpYS1pc2xh/bmQtbGFnb3MuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWpX/b0ptN1BPQjVvWXlC/SURLVlhxVHRabTlZ/Zm1OMjF5cHRHWFRU/SUNsX009",
   },
   {
     id: 11,
     title: "Elon Musk Becomes World's Richest Person as Tesla Stock Surges",
     description:
       "Tesla CEO Elon Musk surpasses Amazon's Jeff Bezos to become the world's richest person, fueled by a surge in Tesla's stock price.",
-    image: "https://imgs.search.brave.com/vn107FXl2zUDRwHtVErqYck8iNNY3XCNDm9Pm9v-WjE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDIwNDg0/NDAuanBn",
+    image:
+      "https://imgs.search.brave.com/vn107FXl2zUDRwHtVErqYck8iNNY3XCNDm9Pm9v-WjE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDIwNDg0/NDAuanBn",
   },
   {
     id: 12,
     title: "Artificial Intelligence Revolutionizes Healthcare Diagnostics",
     description:
       "Advancements in AI technology are transforming healthcare diagnostics, enabling faster and more accurate detection of diseases.",
-    image: "https://imgs.search.brave.com/QcJgrkhI3rgCTD06kfOy_lj7d4q7owKQrVpJlYTtvUg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWct/Y2RuLnBpeGxyLmNv/bS9wYWdlcy1zdG9y/YWdlL0FpSW1hR2Vu/SGVhZGVyLnBuZw",
+    image:
+      "https://imgs.search.brave.com/QcJgrkhI3rgCTD06kfOy_lj7d4q7owKQrVpJlYTtvUg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWct/Y2RuLnBpeGxyLmNv/bS9wYWdlcy1zdG9y/YWdlL0FpSW1hR2Vu/SGVhZGVyLnBuZw",
   },
   {
     id: 13,
@@ -228,14 +253,16 @@ const newsData = [
       "Renewable Energy Surpasses Coal as Largest Source of Electricity in the US",
     description:
       "Renewable energy sources, including wind and solar, overtake coal to become the largest source of electricity in the United States.",
-    image: "https://imgs.search.brave.com/BPZVPQsNpJWOJ-MSWRVvOgdkTyDYA2NwopSKPj_bK1o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTg2/MTYzNTQ4L3Bob3Rv/L2ltYWdlLW9mLXRo/ZS1yZW5ld2FibGUt/ZW5lcmd5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1QT2FZ/ZFNQTzkzb0JpR19O/VlVfOXhHektDWHgz/ckhjLWlOcmROT1Bq/YmlvPQ",
+    image:
+      "https://imgs.search.brave.com/BPZVPQsNpJWOJ-MSWRVvOgdkTyDYA2NwopSKPj_bK1o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTg2/MTYzNTQ4L3Bob3Rv/L2ltYWdlLW9mLXRo/ZS1yZW5ld2FibGUt/ZW5lcmd5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1QT2FZ/ZFNQTzkzb0JpR19O/VlVfOXhHektDWHgz/ckhjLWlOcmROT1Bq/YmlvPQ",
   },
   {
     id: 14,
     title: "Amazon Announces Plans to Expand Its Delivery Drone Fleet",
     description:
       "Amazon reveals plans to expand its delivery drone fleet, aiming to increase efficiency and speed in its package delivery operations.",
-    image: "https://imgs.search.brave.com/95Om5WPtWKrg8AMjw-AgJ2VggJcCOMPBmULPhN0HchI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWRlc2suY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA4/L0FtYXpvbi1pbWFn/ZS1jbG9zZS11cC1l/eGFtcGxlLTEwMjR4/NTc0LmpwZw",
+    image:
+      "https://imgs.search.brave.com/95Om5WPtWKrg8AMjw-AgJ2VggJcCOMPBmULPhN0HchI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWRlc2suY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA4/L0FtYXpvbi1pbWFn/ZS1jbG9zZS11cC1l/eGFtcGxlLTEwMjR4/NTc0LmpwZw",
   },
 ];
 
