@@ -130,12 +130,18 @@ header > span {
   font-size: 2rem;
 }
 
+#brands > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 #brands > div > img {
   height: 10rem;
 }
 
 nav > a {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
@@ -153,7 +159,7 @@ p:last-child {
 
 /* -------------- MOBILE RESPONSIVE ------------- */
 
-@media ((min-width: 370px) and (max-width: 660px)) {
+@media ((min-width: 200px) and (max-width: 660px)) {
   header {
     justify-content: center;
   }
@@ -182,5 +188,25 @@ p:last-child {
 
   .progress-percent {
     font-size: 1.2rem;
+  }
+
+  .option {
+    padding: 1rem 1rem;
+  }
+
+  #brands > div {
+    margin-bottom: 2rem;
+  }
+
+  #brands > div > img {
+    height: 2rem;
+  }
+
+  nav > a {
+    font-size: 1rem;
+  }
+
+  p {
+    margin-top: 1rem;
   }
 }

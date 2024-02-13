@@ -321,15 +321,15 @@ nav > ul > li > a:hover {
   padding: 0.7rem 2rem;
   left: 50%;
   transform: translate(-50%, 0);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
   background-color: transparent;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .show-btn:hover {
-  box-shadow: inset hsl(204, 81%, 55%) 0px 1px 4px,
-    hsl(204, 81%, 35%) 0px 0px 0px 3px;
+  box-shadow:  hsl(204, 81%, 55%) 0px 2px 8px 0px;
 }
 
 /* ---------------- QUOTES ---------------------- */
@@ -474,9 +474,17 @@ footer > .summary {
 }
 
 /* ------------- MEDIA QUERIES --------------- */
-@media ((min-width: 370px) and (max-width: 620px)) {
+@media ((min-width: 200px) and (max-width: 620px)) {
   body {
     overflow-x: hidden;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    justify-content: center;
   }
 
   .center {
@@ -488,7 +496,7 @@ footer > .summary {
   }
 
   #hero {
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
     height: min-content;
   }
 
@@ -497,26 +505,43 @@ footer > .summary {
   }
 
   .logo-gif {
-    height: 5rem;
+    height: 10rem;
   }
 
   .logo-gif ~ h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
   }
 
   .hero-cards {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }  
+    justify-items: center;
+    align-content: center;
+    margin-top: 1rem;
+  }
+
+  .hero-cards > li {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   #brands {
     padding: 0 2rem;
   }
 
   .wrapper-brands ul {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrapper-brands > h2 {
+    font-size: 1.8rem;
   }
 
   .wrapper-brands ul li img {
@@ -528,24 +553,32 @@ footer > .summary {
   }
 
   #insurance {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .divide {
     display: block;
   }
 
+  .left {
+    /* text-align: center; */
+    left: 100%;
+  }
+
   .left img {
-    height: 30rem;
+    /* height: 20rem; */
+    width: 100%;
     margin-bottom: 4rem;
   }
 
   #explore {
     padding: 0 2rem;
+    margin-top: 5rem;
   }
 
   .wrapper-explore > h2 {
     font-size: 2.2rem;
+    font-weight: 600;
   }
 
   .tabs {
@@ -554,6 +587,22 @@ footer > .summary {
 
   .wrapper-news {
     display: block;
+  }
+
+  .news {
+    height: min-content;
+    margin-bottom: 2rem;
+  }
+
+  .news > img {
+    width: 12rem;
+    height: 6rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .news > p {
+    width: 60%;
   }
 
   #quotes {
@@ -590,6 +639,10 @@ footer > .summary {
 
   .grid-1 {
     padding: 0;
+  }
+
+  .grid-1 > img {
+    width: 80%;
   }
 
   footer > .summary {
