@@ -60,16 +60,16 @@ const heroCardData = [
 ];
 
 const brandsData = [
-  { id: 1, icon: "../assets/progressive.png", alt: "progressive png" },
-  { id: 2, icon: "../assets/allstate.png", alt: "allstate png" },
-  { id: 3, icon: "../assets/21st.png", alt: "21st png" },
-  { id: 4, icon: "../assets/nationwide.png", alt: "nationwide png" },
+  { id: 1, icon: "../progressive.png", alt: "progressive png" },
+  { id: 2, icon: "../allstate.png", alt: "allstate png" },
+  { id: 3, icon: "../21st.png", alt: "21st png" },
+  { id: 4, icon: "../nationwide.png", alt: "nationwide png" },
   {
     id: 5,
-    icon: "../assets/liberty_mutual_new.jpg",
+    icon: "../liberty_mutual_new.jpg",
     alt: "liberty_mutual_new png",
   },
-  { id: 6, icon: "../assets/21st.png", alt: "21st png" },
+  { id: 6, icon: "../21st.png", alt: "21st png" },
 ];
 
 const questAns = [

@@ -40,7 +40,7 @@ const autoData = [
   {
     id: 4,
     question: "Select Second Vehicle",
-    options: ["2024", "2023", "2022", "2021", "2020"],
+    options: ["Skoda", "Lamborgini", "Chevrolet", "Toyota", "hyundia"],
     progress: 62,
   },
   {
@@ -58,13 +58,13 @@ const autoData = [
   {
     id: 7,
     question: "Do you have driving License?",
-    options: ["Ensurance", "Farmers", "Mercury"],
+    options: ["Yes", "No"],
     progress: 98,
   },
   {
     id: 8,
     question: "Which will be your next car?",
-    options: ["Ensurance", "Farmers", "Mercury"],
+    options: ["Ford", "Toyota", "Honda"],
     progress: 100,
   },
 ];
