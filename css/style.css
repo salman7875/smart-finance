@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+/* -------------- HEADER START ----------------- */
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+
+header {
+  height: 7rem;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 3.6rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.save {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.start-btn {
+  background-color: hsl(204, 81%, 55%);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: hsl(204, 81%, 35%);
+}
+
+/* -------------- NAV START ----------------- */
+
+nav {
+  background-color: rgb(255, 247, 239);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+nav > ul > li > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #000;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* --------------- HERO START ----------------- */
+#hero {
+  height: calc(100vh - 20rem);
+  background-image: linear-gradient(270deg, #d7dee4, #e7ecf1, #d7dee4);
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.heading {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.logo-gif {
+  height: 12rem;
+  margin-right: 1rem;
+}
+
+.logo-gif ~ h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero-cards {
+  list-style: none;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-cards > li {
+  height: 15rem;
+  width: 15rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 35px -9px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+.hero-cards > li:hover {
+  box-shadow: inset hsl(204, 81%, 55%) 0px 1px 4px,
+    hsl(204, 81%, 35%) 0px 0px 0px 3px;
+  color: #007bff;
+}
+
+.hero-cards > li > a {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-cards > li > a > img {
+  height: 10rem;
+}
+
+/* ------------- BRANDS ICONS START ------------------ */
+#brands {
+  margin-top: 7rem;
+  padding: 0 10rem;
+}
+
+.wrapper-brands {
+  width: 100%;
+}
+
+.wrapper-brands > h2 {
+  text-align: center;
+  color: #666;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.wrapper-brands ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper-brands ul li img {
+  height: 12rem;
+}
+
+/* ----------------- INSURANCE START ------------------ */
+#insurance {
+  margin-top: 5rem;
+  padding: 0 15rem;
+}
+
+.wrapper-insurance {
+}
+
+.wrapper-insurance > h2 {
+  font-size: 4.4rem;
+  font-weight: 300;
+  color: #000000e9;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.divide {
+  display: flex;
+}
+
+.q-p {
+  margin-bottom: 2rem;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.right h3 {
+  font-size: 2.8rem;
+  border-bottom: 2px solid purple;
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  margin-bottom: 4rem;
+}
+
+.question {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* ------------------ EXPLORE START --------------- */
+#explore {
+  margin-top: 10rem;
+  padding: 0 10rem;
+}
+
+.wrapper-explore {
+  width: 100%;
+}
+
+.wrapper-explore > h2 {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.wrapper-explore > p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10rem;
+}
+
+.tab {
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tab:hover {
+  box-shadow: 1px 1px 8px hsl(204, 81%, 55%);
+}
+
+.active-tab {
+  box-shadow: 1px 1px 8px hsl(204, 81%, 45%);
+}
+
+.tab > img {
+  height: 2rem;
+}
+
+/* -------------------- NEWS-CONTAINER START ------------------------- */
+.wrapper-news {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.news {
+  height: 12rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.news > img {
+  height: 9rem;
+  width: 15rem;
+  border-radius: 1rem;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.news > p {
+  width: 40%;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.show-btn {
+  position: relative;
+  padding: 0.7rem 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  box-shadow: inset hsl(204, 81%, 55%) 0px 1px 4px,
+    hsl(204, 81%, 35%) 0px 0px 0px 3px;
+}
+
+/* ---------------- QUOTES ---------------------- */
+
+#quotes {
+  background-color: burlywood;
+  min-height: fit-content;
+  max-height: 60rem;
+  margin-top: 2rem;
+}
+
+.wrapper-quotes {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-quotes > .logo {
+  height: 8rem;
+}
+
+.wrapper-quotes > h4 {
+  font-size: 4rem;
+}
+
+.wrapper-quotes > p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+form > select,
+.pincode > input {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.pincode > input {
+  width: 10rem;
+}
+
+.quote-btn {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #d42f7a;
+  color: #fff;
+  border: 1px solid #d42f7a;
+  border-radius: 0.5rem;
+  animation: up-down 1s ease infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+
+  /* 50% {
+    transform: translateY(0);
+  } */
+
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+/* -------------- FOOTER START --------------- */
+
+footer {
+  padding: 5rem 10rem;
+}
+
+footer > .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid-1 {
+  padding: 0 2.4rem;
+}
+
+.smart {
+  color: #e83a89;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 5rem;
+}
+
+.social {
+  margin: 2rem 0 3rem 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.box img {
+  height: 3rem;
+}
+
+.box p {
+  font-weight: 600;
+}
+.box span {
+  font-size: 1.6rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+footer ul li:not(footer ul li:first-child:hover) {
+  cursor: pointer;
+}
+
+footer ul li:first-child {
+  color: #d42f7a;
+}
+
+footer > .summary {
+  padding: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* ------------- MEDIA QUERIES --------------- */
+@media ((min-width: 370px) and (max-width: 620px)) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .center {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hero {
+    padding: 2rem 5rem;
+    height: min-content;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .logo-gif {
+    height: 5rem;
+  }
+
+  .logo-gif ~ h2 {
+    font-size: 2rem;
+  }
+
+  .hero-cards {
+    width: 100%;
+  }
+
+  #brands {
+    padding: 0 5rem;
+  }
+
+  .wrapper-brands ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrapper-brands ul li img {
+    height: 8rem;
+  }
+
+  .wrapper-insurance > h2 {
+    font-size: 2.2rem;
+  }
+
+  #insurance {
+    padding: 0 5rem;
+  }
+
+  .divide {
+    display: block;
+  }
+
+  .left img {
+    height: 30rem;
+    margin-bottom: 4rem;
+  }
+
+  #explore {
+    padding: 0 2rem;
+  }
+
+  .wrapper-explore > h2 {
+    font-size: 2.2rem;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .wrapper-news {
+    display: block;
+  }
+
+  #quotes {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .wrapper-quotes > h4 {
+    font-size: 2.2rem;
+  }
+
+  form {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+  }
+
+  form > select,
+  .pincode > input,
+  .quote-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+  }
+
+  footer > .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .grid-1 {
+    padding: 0;
+  }
+
+  footer > .summary {
+    padding: 3rem 0;
+  }
+}
