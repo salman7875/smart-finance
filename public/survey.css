@@ -183,11 +183,11 @@ p:last-child {
 
   .progress-bar {
     height: 2.4rem;
-    width: 80%;
+    width: 85%;
   }
 
   .progress-percent {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .option {
