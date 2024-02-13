@@ -169,4 +169,18 @@ p:last-child {
   p:last-child {
     width: 90%;
   }
+
+  #progress > h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    height: 2.4rem;
+    width: 80%;
+  }
+
+  .progress-percent {
+    font-size: 1.2rem;
+  }
 }
