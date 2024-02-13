@@ -178,7 +178,7 @@ nav > ul > li > a:hover {
 }
 
 .wrapper-brands ul li img {
-  height: 10rem;
+  height: 8rem;
 }
 
 /* ----------------- INSURANCE START ------------------ */
@@ -506,7 +506,9 @@ footer > .summary {
 
   .hero-cards {
     width: 100%;
-  }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }  
 
   #brands {
     padding: 0 2rem;
