@@ -178,7 +178,7 @@ nav > ul > li > a:hover {
 }
 
 .wrapper-brands ul li img {
-  height: 12rem;
+  height: 10rem;
 }
 
 /* ----------------- INSURANCE START ------------------ */
@@ -509,7 +509,7 @@ footer > .summary {
   }
 
   #brands {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .wrapper-brands ul {
@@ -518,7 +518,7 @@ footer > .summary {
   }
 
   .wrapper-brands ul li img {
-    height: 8rem;
+    height: 5rem;
   }
 
   .wrapper-insurance > h2 {
