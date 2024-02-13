@@ -395,10 +395,6 @@ form > select,
     transform: translateY(-0.5rem);
   }
 
-  /* 50% {
-    transform: translateY(0);
-  } */
-
   100% {
     transform: translateY(0.5rem);
   }
@@ -646,6 +642,6 @@ footer > .summary {
   }
 
   footer > .summary {
-    padding: 3rem 0;
+    padding-top: 3rem;
   }
 }
